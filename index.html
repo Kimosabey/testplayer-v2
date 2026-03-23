@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Testplayer — Tests</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">Testplayer</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html" aria-current="page">Tests</a>
+          <a href="take-test.html">Take</a>
+          <a href="results.html">Results</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="hero" aria-label="Intro">
+          <div class="hero__inner">
+            <div>
+              <div class="kicker">Warm, editorial test runner</div>
+              <h1>Choose a test.
+                Take it.
+                Learn fast.</h1>
+              <p>
+                A minimal testplayer interface — crisp typography, no clutter, and just enough warmth to feel human.
+              </p>
+            </div>
+
+            <div class="hero__meta">
+              <div class="pill"><span class="pill__dot" aria-hidden="true"></span>3 sample tests</div>
+              <div class="pill"><span class="pill__dot" aria-hidden="true"></span>Static HTML + CSS</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-label="Test listing">
+          <h2 class="section__title">Available tests</h2>
+
+          <div class="grid">
+            <article class="card" aria-label="Math Sprint">
+              <div class="card__top">
+                <h3>Math Sprint</h3>
+                <span class="tag">10 Q • 12 min</span>
+              </div>
+              <p>Quick arithmetic, pattern recognition, and time pressure — designed for momentum.</p>
+              <div class="actions">
+                <a class="btn btn--primary" href="take-test.html">Start</a>
+                <a class="btn" href="results.html">View a demo result</a>
+              </div>
+            </article>
+
+            <article class="card" aria-label="Verbal Warm-up">
+              <div class="card__top">
+                <h3>Verbal Warm‑up</h3>
+                <span class="tag">8 Q • 10 min</span>
+              </div>
+              <p>Short passages and sharp choices. Focus on meaning over speed — then flip that.</p>
+              <div class="actions">
+                <a class="btn btn--primary" href="take-test.html">Start</a>
+                <a class="btn" href="results.html">View a demo result</a>
+              </div>
+            </article>
+
+            <article class="card" aria-label="General Knowledge">
+              <div class="card__top">
+                <h3>General Knowledge</h3>
+                <span class="tag">12 Q • 15 min</span>
+              </div>
+              <p>A broad sweep: history, science, and everyday facts — confidence check, not a trap.</p>
+              <div class="actions">
+                <a class="btn btn--primary" href="take-test.html">Start</a>
+                <a class="btn" href="results.html">View a demo result</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" aria-label="How it works">
+          <h2 class="section__title">How it works</h2>
+          <div class="split">
+            <div class="panel">
+              <p class="muted">
+                This is a styling-first prototype: three pages (listing, taking, results) with a shared layout system.
+                Hook up scoring or persistence later if you want — the visual language is already set.
+              </p>
+              <div class="actions mt-18">
+                <a class="btn btn--primary" href="take-test.html">Open the test-taking page</a>
+                <a class="btn" href="results.html">Open the results page</a>
+              </div>
+            </div>
+
+            <aside class="panel" aria-label="Design constraints">
+              <div class="panel__title">Constraints honored</div>
+              <div class="meta">
+                <div class="meta__row"><span>Palette</span><span>Cream / Ink / Amber</span></div>
+                <div class="divider"></div>
+                <div class="meta__row"><span>Type</span><span>Newsreader + Satoshi</span></div>
+                <div class="divider"></div>
+                <div class="meta__row"><span>Texture</span><span>Subtle noise</span></div>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        Built as a minimal front-end prototype (HTML + CSS).
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
