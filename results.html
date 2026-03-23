@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Testplayer — Results</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="container header__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">Testplayer</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html">Tests</a>
+          <a href="take-test.html">Take</a>
+          <a href="results.html" aria-current="page">Results</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="hero" aria-label="Results header">
+          <div class="hero__inner">
+            <div>
+              <div class="kicker">Results</div>
+              <h1>Math Sprint</h1>
+              <p>
+                A clear readout — what you nailed, what to repeat, what to ignore.
+              </p>
+            </div>
+
+            <div class="hero__meta">
+              <div class="pill"><span class="pill__dot" aria-hidden="true"></span>Completed</div>
+              <div class="pill"><span class="pill__dot" aria-hidden="true"></span>Practice run</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" aria-label="Summary">
+          <h2 class="section__title">Summary</h2>
+
+          <div class="split">
+            <div class="panel">
+              <div class="score">
+                <div class="score__big">7/10</div>
+                <div class="muted">Accuracy: 70% • Pace: steady • Confidence: rising</div>
+              </div>
+
+              <div class="divider my-18"></div>
+
+              <div class="actions">
+                <a class="btn btn--primary" href="take-test.html">Retake</a>
+                <a class="btn" href="index.html">Back to tests</a>
+              </div>
+            </div>
+
+            <aside class="panel" aria-label="Breakdown">
+              <div class="panel__title">Breakdown</div>
+              <div class="meta">
+                <div class="meta__row"><span>Correct</span><span>7</span></div>
+                <div class="divider"></div>
+                <div class="meta__row"><span>Incorrect</span><span>3</span></div>
+                <div class="divider"></div>
+                <div class="meta__row"><span>Unanswered</span><span>0</span></div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section" aria-label="Review">
+          <h2 class="section__title">Review</h2>
+
+          <div class="grid">
+            <article class="card" aria-label="Question 1 review">
+              <div class="card__top">
+                <h3>Q1</h3>
+                <span class="tag">Correct</span>
+              </div>
+              <p>18 × 4 = 72. Keep your multiplication tables sharp under time pressure.</p>
+              <div class="actions">
+                <a class="btn" href="take-test.html">Practice similar</a>
+              </div>
+            </article>
+
+            <article class="card" aria-label="Question 2 review">
+              <div class="card__top">
+                <h3>Q2</h3>
+                <span class="tag">Correct</span>
+              </div>
+              <p>If x = 7, then 3x + 2 = 23. Great — no hesitation.</p>
+              <div class="actions">
+                <a class="btn" href="take-test.html">Practice similar</a>
+              </div>
+            </article>
+
+            <article class="card" aria-label="Question 3 review">
+              <div class="card__top">
+                <h3>Q3</h3>
+                <span class="tag">Missed</span>
+              </div>
+              <p>
+                Sequence 2, 6, 12, 20 adds +4, +6, +8, so next is +10 → 30.
+              </p>
+              <div class="actions">
+                <a class="btn" href="take-test.html">Redo this set</a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        Note: these results are a styled demo. Add scoring logic when ready.
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
