@@ -353,6 +353,17 @@ a:hover{ text-decoration: underline; text-underline-offset: 3px; }
 }
 
 .option{
+  position: relative;
+  display: block;
+}
+
+.option__input{
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+}
+
+.option__box{
   display: grid;
   grid-template-columns: 18px 1fr;
   gap: 12px;
@@ -361,22 +372,31 @@ a:hover{ text-decoration: underline; text-underline-offset: 3px; }
   border-radius: var(--radius-md);
   border: 1px solid var(--line);
   background: color-mix(in srgb, var(--paper) 88%, transparent);
-}
-
-.option input{
-  margin-top: 2px;
-  width: 18px;
-  height: 18px;
-  accent-color: var(--amber);
-}
-
-.option label{
   cursor: pointer;
 }
 
-.option:has(input:checked){
+.option__box::before{
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  margin-top: 2px;
+}
+
+.option__input:checked + .option__box{
   border-color: color-mix(in srgb, var(--amber) 56%, var(--ink));
   background: color-mix(in srgb, var(--amber) 10%, var(--paper));
+}
+
+.option__input:checked + .option__box::before{
+  border-color: var(--amber);
+  background: radial-gradient(circle at 50% 50%, var(--ink) 0 4px, var(--amber) 5px 100%);
+}
+
+.option__input:focus-visible + .option__box{
+  outline: 3px solid color-mix(in srgb, var(--amber) 70%, transparent);
+  outline-offset: 3px;
 }
 
 .meta{
